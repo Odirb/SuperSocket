@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>SuperSocket.Common</RootNamespace>
+    <AssemblyName>SuperSocket.Common</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="StringExtension.NET4.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+</Project>

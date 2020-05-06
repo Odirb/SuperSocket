@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>SuperSocket.SocketEngine</AssemblyName>
+    <RootNamespace>SuperSocket.SocketEngine</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="AppDomainAppServer.cs" />
+    <Compile Remove="AppDomainAppServer.StatusInfo.cs" />
+    <Compile Remove="AppDomainBootstrap.cs" />
+    <Compile Remove="AppDomainBootstrap.Net40.cs" />
+    <Compile Remove="BootstrapFactory.cs" />
+    <Compile Remove="DefaultBootstrap.cs" />
+    <Compile Remove="DefaultBootstrap.Net40.cs" />
+    <Compile Remove="DefaultBootstrap.Net45.cs" />
+    <Compile Remove="Extensions.Net35.cs" />
+    <Compile Remove="IsolationAppServer.cs" />
+    <Compile Remove="ProcessAppServer.cs" />
+    <Compile Remove="ProcessBootstrap.cs" />
+    <Compile Remove="SocketSession.Net45.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\SuperSocket.Common.NetStandard2.csproj" />
+    <ProjectReference Include="..\SocketBase\SuperSocket.SocketBase.NetStandard2.csproj" />
+  </ItemGroup>
+</Project>
